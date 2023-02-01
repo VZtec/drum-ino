@@ -1,17 +1,17 @@
-#Drum.ino
+# Drum.ino
 
 Drum.ino es una máquina de ritmos lo-fi basada en Arduino. Se trata de una batería electrónica con samples de 8 bits y un secuenciador de 16 pasos íntegramente operados por un teclado de PC obsoleto y reutilizado. A pesar de las limitaciones tecnológicas de un Arduino (cantidad de memoria y velocidad de operación) este proyecto ofrece una máquina de ritmos con seis samples ejecutable en tiempo real o mediante un secuenciador, almacenamiento de ritmos en memoria permanente, efectos, generador aleatorio de ritmos, tap tempo, entre otras prestaciones.
 
-#Rasgos distintivos
+# Rasgos distintivos
 Este proyecto nace a partir de la idea de reciclado de hardware. Se observó que los teclados PS/2 están en proceso de obsolescencia pese a contar en general con un buen estado de funcionamiento. Se observó además que los teclados pueden ser personalizados con etiquetas, modificando así su lógica orientada a la escritura por la de “panel con botones mapeables con distintos fines”. A su vez la conectividad PS/2 resulta especialmente fácil de integrar con Arduino ya que no requiere hardware adicional.
 Así surgió la idea de usar un teclado de PC y un Arduino para construir instrumentos musicales.
 Dado que la pieza de hardware más compleja del proyecto (teclado ps/2) proviene del reciclado, queda en manos de los usuarios el trabajo más sencillo: conexiones con componentes mínimos, etiquetado, grabado de arduino y uso del instrumento.
 
-#Filosofía
+# Filosofía
 Como se dijo anteriormente Drum.ino es un instrumento musical formado por la combinación de un teclado de PC obsoleto con un arduino. Consideramos que esa es la idea original del proyecto y no se han observado experiencias anteriores similares. A partir de esa idea pueden surgir una variedad de instrumentos distintos según cómo se programe el arduino y cómo se etiquete el teclado.
 En este caso se trata de una máquina de ritmos, y si bien el código es original y fue desarrollado especialmente para este proyecto, no podría existir si no fuera por el aporte de un sinnúmero de personas que publicaron generosamente su trabajo bajo algún tipo de licencia que permite su reutilización y modificación. En este proyecto se utilizaron dos librerías externas. [Ps2Advanced](https://github.com/techpaul/PS2KeyAdvanced) se utilizó para gestionar la comunicación con el teclado y [Mozzi](https://sensorium.github.io/Mozzi/) como motor de audio y síntesis.
 De esta manera, cumpliendo con las licencias que así lo disponen, pero principalmente motivados por la convicción del valor del trabajo colectivo y libre, el software de este proyecto se publica bajo la licencia más abierta posible. Al momento es: CC,. Tanto el código fuente como el binario se encuentran disponibles en github.
 
-#Drum.ino shield
+# Drum.ino shield
 Consideramos que una parte importante del proyecto es poner a disposición de la comunidad toda la información necesaria para armar un Drum.ino utilizando un cantidad mínima de componentes, herramientas y conocimientos previos. También lo es ofrecer soporte y alentar a los usuarios a que repliquen, modifiquen o incorporen Drum.ino en sus proyectos.
 Sin embargo, se observó que existe una porción de los potenciales usuarios de Drum.ino que no dispone de lo necesario (herramientas, conocimiento, tiempo, interés) para construir  con sus propios medios un instrumento de estas características. Es por ello que en conjunto con [VZtec](http://vztecfx.com/) estamos desarrollando una solución en forma de placa complementaria (shield) que permite al usuario ensamblar su propio Drum.ino simplemente conectando dicha placa con un Arduino sin necesidad de herramientas, como si se tratara de un Lego.
